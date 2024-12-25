@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const http = require("http");
 const path = require('path');
-
+const port = 3030;
 // Setting up socket.io
 const socketio = require("socket.io");
 const server = http.createServer(app);
@@ -26,6 +26,6 @@ app.get('/',(req,res)=>{
     res.render("index");
 });
 
-server.listen(3030,()=>{
+server.listen(port,()=>{
     console.log("Server started on port 3030");
 });
