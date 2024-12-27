@@ -18,3 +18,4 @@ EXPOSE 3030
 
 # Start the application
 CMD ["node", "main.js"]
+
